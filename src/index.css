@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Story+Script&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-cursive: "Story Script", "Dancing Script", cursive;
+  --font-handwritten: "Shadows Into Light", cursive;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(10vh) scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: inherit;
+  }
+  90% {
+    opacity: inherit;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.1) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float 10s linear infinite;
+}
+
+/* Custom CSS helper utility for card envelopes */
+.clip-path-envelope {
+  clip-path: polygon(0% 0%, 100% 0%, 50% 65%);
+}
+
+/* Custom glassmorphic styling */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

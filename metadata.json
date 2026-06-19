@@ -1,0 +1,6 @@
+{
+  "name": "Birthday Countdown for Suruchi",
+  "description": "A beautiful and romantic countdown page for Suruchi's birthday on July 18, 2026, featuring a loving theme, video player, and celebratory fireworks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
