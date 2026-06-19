@@ -55,7 +55,7 @@ export default function VideoPlayerScreen({ onFinished, onBack }: VideoPlayerScr
   };
 
   const handleError = () => {
-    console.error("Failed to load video 99.mp4");
+    console.error("Failed to load video");
     setHasError(true);
     setIsLoading(false);
   };
@@ -110,7 +110,7 @@ export default function VideoPlayerScreen({ onFinished, onBack }: VideoPlayerScr
             <div className="bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
               <span className="text-xs font-mono font-medium tracking-wider uppercase text-rose-300">
-                Playing your special file • 99.mp4
+                Happy Birthday 
               </span>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function VideoPlayerScreen({ onFinished, onBack }: VideoPlayerScr
           </div>
           
           <h4 className="text-xl font-bold text-white mb-2">
-            Could not play "99.mp4"
+            Could not play
           </h4>
           <p className="text-sm text-zinc-400 mb-6 leading-relaxed">
             The background video file could not be fetched or wasn't loaded quite yet, but your special birthday surprise is still 100% active! Let's proceed straight to the celebration! 🎆💖
